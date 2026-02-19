@@ -1,0 +1,19 @@
+.navigation-bar {
+  background-color: var(--bg-secondary);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.nav-tool {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+}

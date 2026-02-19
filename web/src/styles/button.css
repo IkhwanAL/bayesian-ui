@@ -1,0 +1,11 @@
+.navigation-button {
+  background-color: var(--accent-purple);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.navigation-button:hover {
+  background-color: var(--accent-purple-bright);
+}

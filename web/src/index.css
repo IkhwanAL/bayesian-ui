@@ -1,0 +1,41 @@
+:root {
+  /* Background */
+  --bg-primary: #0f1b2d;
+  --bg-secondary: #14233a;
+  --bg-gradient: linear-gradient(135deg, #0f1b2d 0%, #1b2f4a 100%);
+
+  /* Accent (Purple CTA) */
+  --accent-gradient: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  --accent-purple: #8b5cf6;
+  --accent-purple-bright: #a855f7;
+
+  /* Success */
+  --success: #10b981;
+
+  /* Text */
+  --text-primary: #e5e7eb;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Borders / Cards */
+  --border-soft: rgba(148, 163, 184, 0.15);
+  --card-bg: rgba(255, 255, 255, 0.03);
+}
+
+/* reset every css in the browser */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}

@@ -1,0 +1,24 @@
+.recent-decision {
+  margin: 2rem;
+  background-color: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-top-information {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+}
+
+.recent-table-information {
+  margin: auto;
+  min-height: 400px;
+}
+
+.recent-table-empty-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
