@@ -13,3 +13,19 @@
   border-radius: 16px;
   padding: 1rem;
 }
+
+.target-icon {
+  color: royalblue
+}
+
+.check-icon {
+  color: forestgreen
+}
+
+.warning-icon {
+  color: gold
+}
+
+.trending-icon {
+  color: mediumpurple
+}

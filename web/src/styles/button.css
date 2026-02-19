@@ -4,6 +4,9 @@
   padding: 10px;
   border-radius: 5px;
   border: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 .navigation-button:hover {
