@@ -1,20 +1,25 @@
+import { Brain } from "lucide-react"
 import "./TopBar.css"
+import { Plus } from "lucide-react"
 
 export default function TopBar() {
   return (
     <>
       <nav className="navigation-bar">
         <div className="nav-logo">
-          <div>Logo</div>
+          <Brain />
           <span>Personal</span>
         </div>
         <div className="nav-tool">
-          <div>Dashboard</div>
-          <div> + Log Dashboard</div>
-          <div>Decision</div>
-          <div>Insight</div>
+          <button>Dashboard</button>
+          <button className="nav-tag">
+            <Plus />
+            <div>Log Dashboard</div>
+          </button>
+          <button>Decision</button>
+          <button>Insight</button>
         </div>
-      </nav>
+      </nav >
     </>
   )
 }
