@@ -1,19 +1,27 @@
 .recent-decision {
   margin: 2rem;
   background-color: var(--card-bg);
+  border-radius: var(--border-rad);
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(8px);
 }
 
 .recent-top-information {
   display: flex;
   justify-content: space-between;
-  margin: 0.5rem 1rem;
+  margin: 0.8rem 1rem 0.2rem;
 }
 
 .recent-table-information {
-  margin: auto;
   min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brain-icon {
+  opacity: 0.5;
 }
 
 .recent-table-empty-information {

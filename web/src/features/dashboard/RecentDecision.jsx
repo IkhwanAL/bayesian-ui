@@ -2,6 +2,7 @@ import "./RecentDecision.css"
 import "../../styles/button.css"
 import "../../styles/text.css"
 import "../../styles/space.css"
+import { Brain } from "lucide-react"
 
 export default function RecentDecision() {
   return <>
@@ -12,7 +13,7 @@ export default function RecentDecision() {
       </div>
       <div className="recent-table-information">
         <div className="recent-table-empty-information space-x">
-          <div className="logo">Logo</div>
+          <Brain size={48} className="brain-icon" />
           <p className="less-important">No decisions logged yet</p>
           <button className="navigation-button">Log your first decision</button>
         </div>
