@@ -3,6 +3,9 @@ import "./TopBar.css"
 import { Plus } from "lucide-react"
 
 export default function TopBar() {
+  // The Navigation bar is not is not acceptable yet to mobile
+  // Will handle it in the future if mobile is needed
+  // for now current situtation is okay
   return (
     <>
       <nav className="navigation-bar">
