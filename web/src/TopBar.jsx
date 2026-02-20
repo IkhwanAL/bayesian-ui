@@ -1,11 +1,17 @@
 import { Brain } from "lucide-react"
 import "./TopBar.css"
 import { Plus } from "lucide-react"
+import { useRouter } from "./router"
 
 export default function TopBar() {
-  // The Navigation bar is not is not acceptable yet to mobile
-  // Will handle it in the future if mobile is needed
-  // for now current situtation is okay
+  const { navigate } = useRouter()
+
+  const handleRedirectRoute = (route) => {
+    return (_) => {
+      navigate(route)
+    }
+  }
+
   return (
     <>
       <nav className="navigation-bar">
@@ -14,10 +20,10 @@ export default function TopBar() {
           <span>Personal</span>
         </div>
         <div className="nav-tool">
-          <button>Dashboard</button>
-          <button className="nav-tag">
+          <button onClick={handleRedirectRoute("/")}>Dashboard</button>
+          <button className="nav-tag" onClick={handleRedirectRoute("/new-log")}>
             <Plus />
-            <div>Log Dashboard</div>
+            <div>Log New Decision</div>
           </button>
           <button>Decision</button>
           <button>Insight</button>

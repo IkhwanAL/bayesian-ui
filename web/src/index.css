@@ -1,26 +1,74 @@
 :root {
-  /* Background */
+  /* ===================== */
+  /* Background            */
+  /* ===================== */
+
   --bg-primary: #0f1b2d;
   --bg-secondary: #14233a;
   --bg-gradient: linear-gradient(to right, #0f1b2d, #1b2f4a);
 
-  /* Accent (Purple CTA) */
+  /* ===================== */
+  /* Accent (Purple CTA)   */
+  /* ===================== */
+
   --accent-gradient: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
   --accent-purple: #8b5cf6;
   --accent-purple-bright: #a855f7;
+  --accent-purple-soft: rgba(139, 92, 246, 0.15);
 
-  /* Success */
+  /* ===================== */
+  /* Semantic States       */
+  /* ===================== */
+
   --success: #10b981;
+  --success-soft: rgba(16, 185, 129, 0.15);
 
-  /* Text */
+  --warning: #f59e0b;
+  --warning-soft: rgba(245, 158, 11, 0.15);
+
+  --danger: #ef4444;
+  --danger-soft: rgba(239, 68, 68, 0.15);
+
+  /* ===================== */
+  /* Text                  */
+  /* ===================== */
+
   --text-primary: #e5e7eb;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
+  --text-disabled: #475569;
 
-  /* Borders / Cards */
-  --border-soft: rgba(148, 163, 184, 0.15);
+  /* ===================== */
+  /* Surfaces / Cards      */
+  /* ===================== */
+
   --card-bg: rgba(255, 255, 255, 0.03);
-  --border-rad: 16px
+  --card-bg-hover: rgba(255, 255, 255, 0.06);
+  --card-bg-active: rgba(255, 255, 255, 0.08);
+
+  /* ===================== */
+  /* Borders               */
+  /* ===================== */
+
+  --border-soft: rgba(148, 163, 184, 0.15);
+  --border-strong: rgba(148, 163, 184, 0.3);
+  --border-focus: var(--accent-purple);
+
+  /* ===================== */
+  /* Radius                */
+  /* ===================== */
+
+  --border-rad: 16px;
+  --border-rad-sm: 8px;
+  --border-rad-lg: 24px;
+
+  /* ===================== */
+  /* Slider System         */
+  /* ===================== */
+
+  --slider-track: rgba(255, 255, 255, 0.1);
+  --slider-track-active: var(--accent-purple);
+  --slider-thumb: #e5e7eb;
 }
 
 /* reset every css in the browser */
@@ -37,7 +85,7 @@ html {
 }
 
 body {
-  /* background-color: var(--bg-primary); */
+  background-color: var(--bg-primary);
   color: var(--text-primary);
-  background-image: var(--bg-gradient);
+  /* background-image: var(--bg-gradient); */
 }
