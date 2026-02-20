@@ -1,0 +1,111 @@
+.form-card {
+  background-color: var(--card-bg-hover);
+  border-radius: var(--border-rad);
+  margin: 2rem;
+  padding: 1.2rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+}
+
+.form-input>label {
+  margin-bottom: 0.6rem;
+}
+
+.form-input>input,
+.form-input>textarea {
+  padding: 0.5rem;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+  border: 1px solid var(--border-soft);
+  color: white;
+}
+
+.form-input>textarea {
+  font-size: 1rem;
+}
+
+.slider {
+  background-color: transparent !important;
+}
+
+/* Track */
+.slider::-moz-range-track {
+  height: 8px;
+  background-color: var(--slider-track);
+  border-radius: 4px;
+}
+
+/* Thumb */
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: var(--slider-thumb);
+  border-radius: 50%;
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+.range-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  margin: 0.2rem 0rem;
+}
+
+.additional-input {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0.5rem 0rem;
+}
+
+.additional-input>* {
+  flex: 0.2
+}
+
+.additional-input>input {
+  flex: 5;
+  padding: 0.5rem;
+  background-color: var(--bg-primary);
+  color: white;
+  border: 2px solid var(--border-soft);
+  border-radius: 5px;
+}
+
+.failure-mode {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  background: transparent;
+  color: var(--accent-purple-bright);
+  border: none;
+}
+
+.failure-mode:hover {
+  background-color: var(--bg-primary);
+}
+
+.form-alert-icon {
+  color: var(--warning);
+  align-self: center;
+  margin: 0 4px;
+}
+
+.button-icon {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: var(--border-rad-sm);
+  margin: 0 4px;
+}
+
+.button-icon:hover {
+  color: var(--danger);
+  background-color: var(--bg-primary);
+}
