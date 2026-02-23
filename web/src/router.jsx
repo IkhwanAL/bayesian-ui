@@ -24,6 +24,7 @@ export function RouterProvider({ children }) {
   }, [])
 
   const navigate = (to) => {
+    if (path == to) return
     window.history.pushState({}, "", to)
     setPath(to)
   }
